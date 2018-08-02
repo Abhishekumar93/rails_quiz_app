@@ -1,0 +1,59 @@
+<%= form_with(model: question, local: true) do |form| %>
+  <% if question.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(question.errors.count, "error") %> prohibited this question from being saved:</h2>
+
+      <ul>
+      <% question.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Q_No %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <%= form.number_field :Q_No, id: :question_Q_No %>
+  </div>
+
+  <br>
+
+  <div class="field">
+    <%= form.label :Question %>
+    <%= form.text_field :Question, id: :question_Question %>
+  </div>
+
+  <br>
+
+  <div class="field">
+    <%= form.label :Option_1 %>
+    <%= form.text_field :Option_1, id: :question_Option_1 %>
+  </div>
+
+  <br>
+
+  <div class="field">
+    <%= form.label :Option_2 %>
+    <%= form.text_field :Option_2, id: :question_Option_2 %>
+  </div>
+
+  <br>
+  
+  <div class="field">
+    <%= form.label :Option_3 %>
+    <%= form.text_field :Option_3, id: :question_Option_3 %>
+  </div>
+
+  <br>
+  
+  <div class="field">
+    <%= form.label :Option_4 %>
+    <%= form.text_field :Option_4, id: :question_Option_4 %>
+  </div>
+
+  <br>
+  
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
