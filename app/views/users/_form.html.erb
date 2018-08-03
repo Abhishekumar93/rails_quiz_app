@@ -1,0 +1,15 @@
+<%= form_with(model: user, local: true)%>
+  <div class="field" style="text-align: center; float: left; width: 20%; padding-left: 10">
+    <%= form.label :Answers_Q_No %>
+    <%= form.number_field :Answers_Q_No, id: :user_Answers_Q_No %>
+  </div>
+
+  <div class="field" style="text-align: center; float: left; width: 20%; padding-left: 10">
+    <%= form.label :Answers %>
+    <%= form.text_field :Answers, id: :user_Answers %>
+  </div>
+
+  <div class="actions" style="text-align: center; float: left; width: 20%; padding-left: 10">
+    <%= form.submit %>
+  </div>
+<% end %>

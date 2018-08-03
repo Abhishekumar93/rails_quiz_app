@@ -1,0 +1,28 @@
+<h1 align="center">Answers</h1>
+
+<table align="center" width="800">
+  <thead>
+    <tr>
+      <th align="center">Q.No</th>
+      <th align="center">Answers</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td align="center"><%= user.answers_Q_No %></td>
+        <td align="center"><%= user.Answers %></td>
+        <td><%= link_to 'Next Answer', new_user_path %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+

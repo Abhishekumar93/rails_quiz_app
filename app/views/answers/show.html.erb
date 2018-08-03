@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Question q no:</strong>
-  <%= @answer.Question_Q_No %>
+  <strong>Q.No:</strong>
+  <%= @answer.question_Q_No %>
 </p>
 
 <p>
@@ -10,6 +10,6 @@
   <%= @answer.Answer %>
 </p>
 
-<%= link_to 'Next', new_answer_path %>
+<%= link_to 'Next', new_answer_path %> |
 <%= link_to 'Edit', edit_answer_path(@answer) %> |
 <%= link_to 'Back', answers_path %>

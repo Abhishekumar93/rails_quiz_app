@@ -14,7 +14,7 @@
   <tbody>
     <% @answers.each do |answer| %>
       <tr>
-        <td align="center"><%= answer.Question_Q_No %></td>
+        <td align="center"><%= answer.question_Q_No %></td>
         <td align="center"><%= answer.Answer %></td>
         <td><%= link_to 'Next', new_answer_path %></td>
         <td><%= link_to 'Show', answer %></td>

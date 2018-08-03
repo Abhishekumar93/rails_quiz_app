@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Questions</h1>
+<h1 align="center">Questions</h1>
 
-<table>
-  <thead>
+<table align="center">
+  <thead style="text-align: center">
     <tr>
       <th>Q.No</th>
       <th>Question</th>
@@ -15,7 +15,7 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody style="text-align: center">
     <% @questions.each do |question| %>
       <tr>
         <td><%= question.Q_No %></td>
@@ -24,8 +24,9 @@
         <td><%= question.Option_2 %></td>
         <td><%= question.Option_3 %></td>
         <td><%= question.Option_4 %></td>
-        <td><%= link_to 'Show', question %></td>
-        <td><%= link_to 'Edit', edit_question_path(question) %></td>
+        <td><%= link_to 'New Question', new_question_path %> |</td>
+        <td><%= link_to 'Show', question %> |</td>
+        <td><%= link_to 'Edit', edit_question_path(question) %> |</td>
         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -34,4 +35,4 @@
 
 <br>
 
-<%= link_to 'New Question', new_question_path %>
+
