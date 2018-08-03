@@ -1,15 +1,15 @@
-<p id="notice"><%= notice %></p>
+	<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Q.No:</strong>
-  <%= @answer.question_Q_No %>
-</p>
+	<p>
+  		<strong>Q.No:</strong>
+ 		<%= @answer.question_Q_No %>
+	</p>
 
-<p>
-  <strong>Answer:</strong>
-  <%= @answer.Answer %>
-</p>
+	<p>
+  		<strong>Answer:</strong>
+  		<%= @answer.Answer %>
+	</p>
 
-<%= link_to 'Next', new_answer_path %> |
-<%= link_to 'Edit', edit_answer_path(@answer) %> |
-<%= link_to 'Back', answers_path %>
+	<%= link_to 'Next', new_answer_path %> |
+	<%= link_to 'Edit', edit_answer_path(@answer) %> |
+	<%= link_to 'Back', answers_path %>

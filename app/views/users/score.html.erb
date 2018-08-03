@@ -1,21 +1,23 @@
-<p><%= "Score" %></p>
+<%= form_tag form_remote_tag :url => score_users_path, :html => {:id => 5, :class => 'users_class'} do %>
+	<p><%= "Score" %></p>
 
-<p>
-	<strong>Total Number Of Questions:</strong>
-	<%= @user.total %>
-</p>
+    <p>
+	   <strong>Total Number Of Questions:</strong>
+	   <%= @user.total %>
+    </p>
 
-<p>
-	<strong>Correct Answers:</strong>
-	<%= @user.count %>
-</p>
+    <p>
+	   <strong>Correct Answers:</strong>
+	   <%= @user.count %>
+    </p>
 
-<p>
-	<strong>Wrong Answers:</strong>
-	<%= @user.wrong %>
-</p>
+    <p>
+	   <strong>Wrong Answers:</strong>
+	   <%= @user.wrong %>
+    </p>
 
-<p>
-	<strong>Score</strong>
-	<%= @user.score %>
-</p>
+    <p>
+	    <strong>Score</strong>
+	    <%= @user.score %>
+    </p>
+<% end %>

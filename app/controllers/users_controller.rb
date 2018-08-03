@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   layout false
-  before_action :set_user, only: [:show, :edit, :update, :destroy, :score]
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
   # GET /users.json
