@@ -3,30 +3,32 @@ Rails.application.routes.draw do
   resources :answers
   resources :questions
 
-  get 'questions\index'
+  get 'questions/index'
 
-  get 'questions\edit'
+  get 'questions/edit'
 
-  get 'questions\show'
+  get 'questions/show'
 
-  get 'questions\new'
+  get 'questions/new'
 
-  get 'answers\index'
+  get 'answers/index'
 
-  get 'answers\edit'
+  get 'answers/edit'
 
-  get 'answers\show'
+  get 'answers/show'
 
-  get 'answers\new'
+  get 'answers/new'
 
-  get 'users\index'
+  get 'users/index'
 
-  get 'users\edit'
+  get 'users/edit'
 
-  get 'users\show'
+  get 'users/show'
 
-  get 'users\new'
-  
+  get 'users/new'
+
+  get 'users/score'
+
   root 'questions#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

@@ -16,7 +16,6 @@
       <tr>
         <td align="center"><%= answer.question_Q_No %></td>
         <td align="center"><%= answer.Answer %></td>
-        <td><%= link_to 'Next', new_answer_path %></td>
         <td><%= link_to 'Show', answer %></td>
         <td><%= link_to 'Edit', edit_answer_path(answer) %></td>
         <td><%= link_to 'Destroy', answer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -24,3 +23,9 @@
     <% end %>
   </tbody>
 </table>
+
+<br>
+
+<div align="center">
+  <%= link_to 'Next', new_answer_path %>
+</div>

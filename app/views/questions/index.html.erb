@@ -24,7 +24,6 @@
         <td><%= question.Option_2 %></td>
         <td><%= question.Option_3 %></td>
         <td><%= question.Option_4 %></td>
-        <td><%= link_to 'New Question', new_question_path %> |</td>
         <td><%= link_to 'Show', question %> |</td>
         <td><%= link_to 'Edit', edit_question_path(question) %> |</td>
         <td><%= link_to 'Destroy', question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -35,4 +34,6 @@
 
 <br>
 
-
+<div align="center">
+  <%= link_to 'New Question', new_question_path %>
+</div>
